@@ -1,9 +1,9 @@
-# IBM Data Science Professional Certificate
-https://www.coursera.org/specializations/ibm-data-science-professional-certificate
-</p><br></p>
+<p align="center">
+  <a href="https://www.coursera.org/specializations/ibm-data-science-professional-certificate"><img src = "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ed/4131809fe511e8937a7926bc59e37f/Professional-Certificate---Data-Science---600x600---Blu-Text.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF" width = 60></a>
+</p>
 
+# IBM Data Science Professional Certificate
 ## COURSE 9 - Applied Data Science Capstone
-https://www.coursera.org/learn/applied-data-science-capstone
 </p><br></p>
 
 ### Week 01: Capstone Project Notebook
