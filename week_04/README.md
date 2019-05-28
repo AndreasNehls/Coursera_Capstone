@@ -1,4 +1,4 @@
-## Capstone Project - The Battle of Neighborhoods
+## Week 04: Capstone Project - The Battle of Neighborhoods (Week 1)
 
 ### Opening of new bakeries
 
