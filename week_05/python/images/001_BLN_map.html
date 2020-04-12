@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cffaf4e4003a4de1b3421a8ef5eb9a47 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cffaf4e4003a4de1b3421a8ef5eb9a47" ></div>
+        
+</body>
+<script>    
+    
+            var map_cffaf4e4003a4de1b3421a8ef5eb9a47 = L.map(
+                "map_cffaf4e4003a4de1b3421a8ef5eb9a47",
+                {
+                    center: [52.5170365, 13.3888599],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e1524440094b4401ace38ff57ceb1bd0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+            var circle_marker_a38f4ed0469d4e96bab8f9e09d2675b2 = L.circleMarker(
+                [52.500520062179, 13.418709963356338],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_c0f1123989684730928f5d511a5497cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca0aece3b8a646c39b5048390c08f05b = $(`<div id="html_ca0aece3b8a646c39b5048390c08f05b" style="width: 100.0%; height: 100.0%;">Friedrichshain-Kreuzberg</div>`)[0];
+            popup_c0f1123989684730928f5d511a5497cd.setContent(html_ca0aece3b8a646c39b5048390c08f05b);
+        
+
+        circle_marker_a38f4ed0469d4e96bab8f9e09d2675b2.bindPopup(popup_c0f1123989684730928f5d511a5497cd)
+        ;
+
+        
+    
+    
+            var circle_marker_651059b7174e4756924a1beb19603bb2 = L.circleMarker(
+                [52.51618000000008, 13.480870000000039],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_b2cbd002a9e44177a0dfc6df047e41e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8bf3fc510b74a8584fb9c5a0112b07a = $(`<div id="html_b8bf3fc510b74a8584fb9c5a0112b07a" style="width: 100.0%; height: 100.0%;">Lichtenberg</div>`)[0];
+            popup_b2cbd002a9e44177a0dfc6df047e41e8.setContent(html_b8bf3fc510b74a8584fb9c5a0112b07a);
+        
+
+        circle_marker_651059b7174e4756924a1beb19603bb2.bindPopup(popup_b2cbd002a9e44177a0dfc6df047e41e8)
+        ;
+
+        
+    
+    
+            var circle_marker_d932575302da4168883d307de8d5dcc0 = L.circleMarker(
+                [52.51667000000003, 13.583330000000046],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_d2ac417b061c4107b0c2f93f9085777c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17780ee1fdd84dd5b594317dea762be2 = $(`<div id="html_17780ee1fdd84dd5b594317dea762be2" style="width: 100.0%; height: 100.0%;">Marzahn-Hellersdorf</div>`)[0];
+            popup_d2ac417b061c4107b0c2f93f9085777c.setContent(html_17780ee1fdd84dd5b594317dea762be2);
+        
+
+        circle_marker_d932575302da4168883d307de8d5dcc0.bindPopup(popup_d2ac417b061c4107b0c2f93f9085777c)
+        ;
+
+        
+    
+    
+            var circle_marker_df0ad3664fde456993666b6168322f38 = L.circleMarker(
+                [52.52119000000005, 13.424140000000023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_43d2a04b4ded4fb18628f6a2612d05cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea554d46d45d40a09755dbeae47efc4f = $(`<div id="html_ea554d46d45d40a09755dbeae47efc4f" style="width: 100.0%; height: 100.0%;">Mitte</div>`)[0];
+            popup_43d2a04b4ded4fb18628f6a2612d05cd.setContent(html_ea554d46d45d40a09755dbeae47efc4f);
+        
+
+        circle_marker_df0ad3664fde456993666b6168322f38.bindPopup(popup_43d2a04b4ded4fb18628f6a2612d05cd)
+        ;
+
+        
+    
+    
+            var circle_marker_811155d63e9348b1bdff55fda165f50f = L.circleMarker(
+                [52.480770000000064, 13.435410000000047],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_6c882a12fdf84747af5b23c8b0f02135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d526df4bd4e04c9a80e004cba4f12095 = $(`<div id="html_d526df4bd4e04c9a80e004cba4f12095" style="width: 100.0%; height: 100.0%;">Neukölln</div>`)[0];
+            popup_6c882a12fdf84747af5b23c8b0f02135.setContent(html_d526df4bd4e04c9a80e004cba4f12095);
+        
+
+        circle_marker_811155d63e9348b1bdff55fda165f50f.bindPopup(popup_6c882a12fdf84747af5b23c8b0f02135)
+        ;
+
+        
+    
+    
+            var circle_marker_4b1d8d07d4f642d58fd5d21747ad2fa0 = L.circleMarker(
+                [52.56925000000007, 13.402480000000025],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_2dddc08a00164b6ba10a184d9893e08c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3fb50de01af45f59deeb0d1c6f99be6 = $(`<div id="html_f3fb50de01af45f59deeb0d1c6f99be6" style="width: 100.0%; height: 100.0%;">Pankow</div>`)[0];
+            popup_2dddc08a00164b6ba10a184d9893e08c.setContent(html_f3fb50de01af45f59deeb0d1c6f99be6);
+        
+
+        circle_marker_4b1d8d07d4f642d58fd5d21747ad2fa0.bindPopup(popup_2dddc08a00164b6ba10a184d9893e08c)
+        ;
+
+        
+    
+    
+            var circle_marker_d3874c3682834073bfb98485a9fe1d28 = L.circleMarker(
+                [52.575450000000046, 13.349700000000041],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_4358eabfd77c48ff8564ec401d9a502b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45169f1312614b2e8591968b86f8dc0d = $(`<div id="html_45169f1312614b2e8591968b86f8dc0d" style="width: 100.0%; height: 100.0%;">Reinickendorf</div>`)[0];
+            popup_4358eabfd77c48ff8564ec401d9a502b.setContent(html_45169f1312614b2e8591968b86f8dc0d);
+        
+
+        circle_marker_d3874c3682834073bfb98485a9fe1d28.bindPopup(popup_4358eabfd77c48ff8564ec401d9a502b)
+        ;
+
+        
+    
+    
+            var circle_marker_3c7fce530324432b8e8104cfcd6aca7a = L.circleMarker(
+                [52.53487000000007, 13.202160000000049],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_a56870f885fc4677a120022bdb269c32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc6448c9b7c34bb68a13e4f268558316 = $(`<div id="html_bc6448c9b7c34bb68a13e4f268558316" style="width: 100.0%; height: 100.0%;">Spandau</div>`)[0];
+            popup_a56870f885fc4677a120022bdb269c32.setContent(html_bc6448c9b7c34bb68a13e4f268558316);
+        
+
+        circle_marker_3c7fce530324432b8e8104cfcd6aca7a.bindPopup(popup_a56870f885fc4677a120022bdb269c32)
+        ;
+
+        
+    
+    
+            var circle_marker_5c25e583bf324bb797d8d30bdbbdf692 = L.circleMarker(
+                [52.43485000000004, 13.24183000000005],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_dd2ff28af24d45d9bdfc634faf1cc771 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98e032c3646d4585aa6d1c9c63fbe931 = $(`<div id="html_98e032c3646d4585aa6d1c9c63fbe931" style="width: 100.0%; height: 100.0%;">Steglitz-Zehlendorf</div>`)[0];
+            popup_dd2ff28af24d45d9bdfc634faf1cc771.setContent(html_98e032c3646d4585aa6d1c9c63fbe931);
+        
+
+        circle_marker_5c25e583bf324bb797d8d30bdbbdf692.bindPopup(popup_dd2ff28af24d45d9bdfc634faf1cc771)
+        ;
+
+        
+    
+    
+            var circle_marker_79e1b3a00fde4637a81fdc0cdfbd81ca = L.circleMarker(
+                [52.47769743739926, 13.35870062810808],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_f940129037d8401d8c7adbd1bc6e0eff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_503527eced2e4291978002631d03bd98 = $(`<div id="html_503527eced2e4291978002631d03bd98" style="width: 100.0%; height: 100.0%;">Tempelhof-Schöneberg</div>`)[0];
+            popup_f940129037d8401d8c7adbd1bc6e0eff.setContent(html_503527eced2e4291978002631d03bd98);
+        
+
+        circle_marker_79e1b3a00fde4637a81fdc0cdfbd81ca.bindPopup(popup_f940129037d8401d8c7adbd1bc6e0eff)
+        ;
+
+        
+    
+    
+            var circle_marker_984621eb9611446a8fd0a99b49bc248f = L.circleMarker(
+                [52.43333000000007, 13.600000000000023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_cffaf4e4003a4de1b3421a8ef5eb9a47);
+        
+    
+        var popup_0bed91d02aa041bda810d86ba45278c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b4b5b01540641378ed7026d4c7d2761 = $(`<div id="html_7b4b5b01540641378ed7026d4c7d2761" style="width: 100.0%; height: 100.0%;">Treptow-Köpenick</div>`)[0];
+            popup_0bed91d02aa041bda810d86ba45278c1.setContent(html_7b4b5b01540641378ed7026d4c7d2761);
+        
+
+        circle_marker_984621eb9611446a8fd0a99b49bc248f.bindPopup(popup_0bed91d02aa041bda810d86ba45278c1)
+        ;
+
+        
+    
+</script>

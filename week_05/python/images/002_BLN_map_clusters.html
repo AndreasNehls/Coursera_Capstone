@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
@@ -15,458 +20,253 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-    <meta name="viewport" content="width=device-width,
-        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_86cb56ca0c944d08b808d290127c99f0 {
-        position: relative;
-        width: 100.0%;
-        height: 100.0%;
-        left: 0.0%;
-        top: 0.0%;
-        }
-    </style>
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e6426a2c92bc45c1802631f9367067b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
 </head>
 <body>    
     
-    <div class="folium-map" id="map_86cb56ca0c944d08b808d290127c99f0" ></div>
+            <div class="folium-map" id="map_e6426a2c92bc45c1802631f9367067b5" ></div>
+        
 </body>
 <script>    
     
-    
-        var bounds = null;
-    
-
-    var map_86cb56ca0c944d08b808d290127c99f0 = L.map(
-        'map_86cb56ca0c944d08b808d290127c99f0', {
-        center: [52.5170365, 13.3888599],
-        zoom: 11,
-        maxBounds: bounds,
-        layers: [],
-        worldCopyJump: false,
-        crs: L.CRS.EPSG3857,
-        zoomControl: true,
-        });
-
-
-    
-    var tile_layer_658cab8d78de4f17b3de2a800594b917 = L.tileLayer(
-        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        {
-        "attribution": null,
-        "detectRetina": false,
-        "maxNativeZoom": 18,
-        "maxZoom": 18,
-        "minZoom": 0,
-        "noWrap": false,
-        "opacity": 1,
-        "subdomains": "abc",
-        "tms": false
-}).addTo(map_86cb56ca0c944d08b808d290127c99f0);
-    
-            var circle_marker_7e60ebb1321f474991384fbe2d77a640 = L.circleMarker(
-                [52.56925000000007, 13.402480000000025],
+            var map_e6426a2c92bc45c1802631f9367067b5 = L.map(
+                "map_e6426a2c92bc45c1802631f9367067b5",
                 {
-  "bubblingMouseEvents": true,
-  "color": "#ff0000",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#ff0000",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_3af2e3ae84514486924b2d6bf551d109 = L.popup({maxWidth: '100%'
-            
-            });
+                    center: [52.5170365, 13.3888599],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
 
             
-                var html_a43ad1d2fddf4414b99f5f4c768543be = $(`<div id="html_a43ad1d2fddf4414b99f5f4c768543be" style="width: 100.0%; height: 100.0%;">Pankow - Cluster 0</div>`)[0];
-                popup_3af2e3ae84514486924b2d6bf551d109.setContent(html_a43ad1d2fddf4414b99f5f4c768543be);
-            
 
-            circle_marker_7e60ebb1321f474991384fbe2d77a640.bindPopup(popup_3af2e3ae84514486924b2d6bf551d109)
-            ;
-
-            
         
     
-            var circle_marker_8a9f4b5ea2164aab82fb3464c71a3262 = L.circleMarker(
-                [52.500530036643774, 13.418679956142979],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#8000ff",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#8000ff",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_fa142e5d43a74f769aa3102608058a31 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_1eb58bd496084e54a0861584606c474b = $(`<div id="html_1eb58bd496084e54a0861584606c474b" style="width: 100.0%; height: 100.0%;">Friedrichshain-Kreuzberg - Cluster 1</div>`)[0];
-                popup_fa142e5d43a74f769aa3102608058a31.setContent(html_1eb58bd496084e54a0861584606c474b);
-            
-
-            circle_marker_8a9f4b5ea2164aab82fb3464c71a3262.bindPopup(popup_fa142e5d43a74f769aa3102608058a31)
-            ;
-
-            
+            var tile_layer_289d076608af4d14a022a084eb86ba80 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
         
     
-            var circle_marker_358c0e05006e4626bfdd6a16edb47b8d = L.circleMarker(
-                [52.51618000000008, 13.480870000000039],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#8000ff",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#8000ff",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_7147576c5a7542b79233c3a3eb909ad7 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_7d702ad2f14b42449600574f7ddd7b88 = $(`<div id="html_7d702ad2f14b42449600574f7ddd7b88" style="width: 100.0%; height: 100.0%;">Lichtenberg - Cluster 1</div>`)[0];
-                popup_7147576c5a7542b79233c3a3eb909ad7.setContent(html_7d702ad2f14b42449600574f7ddd7b88);
-            
-
-            circle_marker_358c0e05006e4626bfdd6a16edb47b8d.bindPopup(popup_7147576c5a7542b79233c3a3eb909ad7)
-            ;
-
-            
-        
-    
-            var circle_marker_84a0aff6dd6e4d069573dfca721860cd = L.circleMarker(
-                [52.43485000000004, 13.24183000000005],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#8000ff",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#8000ff",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_fa7412d6d4904b30949be2e20be6705c = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_97431462f3a14739b78fe32d08cb0325 = $(`<div id="html_97431462f3a14739b78fe32d08cb0325" style="width: 100.0%; height: 100.0%;">Steglitz-Zehlendorf - Cluster 1</div>`)[0];
-                popup_fa7412d6d4904b30949be2e20be6705c.setContent(html_97431462f3a14739b78fe32d08cb0325);
-            
-
-            circle_marker_84a0aff6dd6e4d069573dfca721860cd.bindPopup(popup_fa7412d6d4904b30949be2e20be6705c)
-            ;
-
-            
-        
-    
-            var circle_marker_85596adffd0247a7954293c15a05a8fc = L.circleMarker(
-                [52.477706405047485, 13.358656086540078],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#8000ff",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#8000ff",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_2535f3cefa4f436ea904e5717a3f9005 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_95947a41009249d59b2c2dd005219a5c = $(`<div id="html_95947a41009249d59b2c2dd005219a5c" style="width: 100.0%; height: 100.0%;">Tempelhof-Schöneberg - Cluster 1</div>`)[0];
-                popup_2535f3cefa4f436ea904e5717a3f9005.setContent(html_95947a41009249d59b2c2dd005219a5c);
-            
-
-            circle_marker_85596adffd0247a7954293c15a05a8fc.bindPopup(popup_2535f3cefa4f436ea904e5717a3f9005)
-            ;
-
-            
-        
-    
-            var circle_marker_08ba44c91bc94ea78386552e77e85cd9 = L.circleMarker(
-                [52.43333000000007, 13.600000000000023],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#8000ff",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#8000ff",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_b0614465f759469f9807d496f72d8f9c = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_fbeaf0deb7db400db2d01540651592e7 = $(`<div id="html_fbeaf0deb7db400db2d01540651592e7" style="width: 100.0%; height: 100.0%;">Treptow-Köpenick - Cluster 1</div>`)[0];
-                popup_b0614465f759469f9807d496f72d8f9c.setContent(html_fbeaf0deb7db400db2d01540651592e7);
-            
-
-            circle_marker_08ba44c91bc94ea78386552e77e85cd9.bindPopup(popup_b0614465f759469f9807d496f72d8f9c)
-            ;
-
-            
-        
-    
-            var circle_marker_8d12a259d61b4e0ab19aa36437722c5a = L.circleMarker(
+            var circle_marker_17fc902bd4284511b3867c08f3066b91 = L.circleMarker(
                 [52.51667000000003, 13.583330000000046],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#80ffb4",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#80ffb4",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_2a6e8e51767041bd806e23ae5c1aeeb7 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_cacc82d0696940a6aa3e3f0bc2b010be = $(`<div id="html_cacc82d0696940a6aa3e3f0bc2b010be" style="width: 100.0%; height: 100.0%;">Marzahn-Hellersdorf - Cluster 2</div>`)[0];
-                popup_2a6e8e51767041bd806e23ae5c1aeeb7.setContent(html_cacc82d0696940a6aa3e3f0bc2b010be);
-            
-
-            circle_marker_8d12a259d61b4e0ab19aa36437722c5a.bindPopup(popup_2a6e8e51767041bd806e23ae5c1aeeb7)
-            ;
-
-            
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
         
     
-            var circle_marker_a843f4549b874f659ee6b96f6b0d25b2 = L.circleMarker(
-                [52.52121000000005, 13.424150000000054],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#80ffb4",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#80ffb4",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_d1ded5356c3c40d0a6b97421ae955102 = L.popup({maxWidth: '100%'
-            
-            });
+        var popup_2d0a0d4555aa4b3290370dc818cde460 = L.popup({"maxWidth": "100%"});
 
-            
-                var html_8625a7a00f8a452bab368913fee1ebd3 = $(`<div id="html_8625a7a00f8a452bab368913fee1ebd3" style="width: 100.0%; height: 100.0%;">Mitte - Cluster 2</div>`)[0];
-                popup_d1ded5356c3c40d0a6b97421ae955102.setContent(html_8625a7a00f8a452bab368913fee1ebd3);
-            
+        
+            var html_406367927f7d42e5bfcdff87a31f2c66 = $(`<div id="html_406367927f7d42e5bfcdff87a31f2c66" style="width: 100.0%; height: 100.0%;">Marzahn-Hellersdorf - Cluster 0</div>`)[0];
+            popup_2d0a0d4555aa4b3290370dc818cde460.setContent(html_406367927f7d42e5bfcdff87a31f2c66);
+        
 
-            circle_marker_a843f4549b874f659ee6b96f6b0d25b2.bindPopup(popup_d1ded5356c3c40d0a6b97421ae955102)
-            ;
+        circle_marker_17fc902bd4284511b3867c08f3066b91.bindPopup(popup_2d0a0d4555aa4b3290370dc818cde460)
+        ;
 
-            
         
     
-            var circle_marker_b92bc63ad9b047acbb041787622bb6bc = L.circleMarker(
+    
+            var circle_marker_4fc55d3ebed94e9cb193cc602acb2f56 = L.circleMarker(
                 [52.480770000000064, 13.435410000000047],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#80ffb4",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#80ffb4",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_8986da70fad74301adff8a81c98de257 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_c69c43be5e84459cbc90d69e56ea9542 = $(`<div id="html_c69c43be5e84459cbc90d69e56ea9542" style="width: 100.0%; height: 100.0%;">Neukölln - Cluster 2</div>`)[0];
-                popup_8986da70fad74301adff8a81c98de257.setContent(html_c69c43be5e84459cbc90d69e56ea9542);
-            
-
-            circle_marker_b92bc63ad9b047acbb041787622bb6bc.bindPopup(popup_8986da70fad74301adff8a81c98de257)
-            ;
-
-            
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
         
     
-            var circle_marker_6f7c2d2e3ea0494f933d7fc1f03a36e2 = L.circleMarker(
+        var popup_7874b897ca9146bd855617f7c5b0a87f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f54652b51da4e10874358b9a911d866 = $(`<div id="html_3f54652b51da4e10874358b9a911d866" style="width: 100.0%; height: 100.0%;">Neukölln - Cluster 0</div>`)[0];
+            popup_7874b897ca9146bd855617f7c5b0a87f.setContent(html_3f54652b51da4e10874358b9a911d866);
+        
+
+        circle_marker_4fc55d3ebed94e9cb193cc602acb2f56.bindPopup(popup_7874b897ca9146bd855617f7c5b0a87f)
+        ;
+
+        
+    
+    
+            var circle_marker_f678961b2b9247809c587883a3c3fd88 = L.circleMarker(
+                [52.56925000000007, 13.402480000000025],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_a9f4ef2e97234edf9742b8043b91470f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac239c9b85194fad85de7f3794966e1d = $(`<div id="html_ac239c9b85194fad85de7f3794966e1d" style="width: 100.0%; height: 100.0%;">Pankow - Cluster 0</div>`)[0];
+            popup_a9f4ef2e97234edf9742b8043b91470f.setContent(html_ac239c9b85194fad85de7f3794966e1d);
+        
+
+        circle_marker_f678961b2b9247809c587883a3c3fd88.bindPopup(popup_a9f4ef2e97234edf9742b8043b91470f)
+        ;
+
+        
+    
+    
+            var circle_marker_ddca403e73a94164b8757c9033c4a789 = L.circleMarker(
+                [52.43485000000004, 13.24183000000005],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_69f99a072236470585152e9db3af7574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab1b5d56430f4e4c9e23e1206ed31a13 = $(`<div id="html_ab1b5d56430f4e4c9e23e1206ed31a13" style="width: 100.0%; height: 100.0%;">Steglitz-Zehlendorf - Cluster 0</div>`)[0];
+            popup_69f99a072236470585152e9db3af7574.setContent(html_ab1b5d56430f4e4c9e23e1206ed31a13);
+        
+
+        circle_marker_ddca403e73a94164b8757c9033c4a789.bindPopup(popup_69f99a072236470585152e9db3af7574)
+        ;
+
+        
+    
+    
+            var circle_marker_97e8fad44d404b1ea3a013dc59669f8f = L.circleMarker(
+                [52.500520062179, 13.418709963356338],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_123f66281f4a4756a4461e92a89283a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce85459b215a4b16b835f4200dbfeabb = $(`<div id="html_ce85459b215a4b16b835f4200dbfeabb" style="width: 100.0%; height: 100.0%;">Friedrichshain-Kreuzberg - Cluster 1</div>`)[0];
+            popup_123f66281f4a4756a4461e92a89283a4.setContent(html_ce85459b215a4b16b835f4200dbfeabb);
+        
+
+        circle_marker_97e8fad44d404b1ea3a013dc59669f8f.bindPopup(popup_123f66281f4a4756a4461e92a89283a4)
+        ;
+
+        
+    
+    
+            var circle_marker_8faa465dfd254fe08009b39972fea795 = L.circleMarker(
+                [52.51618000000008, 13.480870000000039],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_f45643aefd84403a892d0e043256385d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba68e7b2ffb04f1688b7dd88fb03aa77 = $(`<div id="html_ba68e7b2ffb04f1688b7dd88fb03aa77" style="width: 100.0%; height: 100.0%;">Lichtenberg - Cluster 1</div>`)[0];
+            popup_f45643aefd84403a892d0e043256385d.setContent(html_ba68e7b2ffb04f1688b7dd88fb03aa77);
+        
+
+        circle_marker_8faa465dfd254fe08009b39972fea795.bindPopup(popup_f45643aefd84403a892d0e043256385d)
+        ;
+
+        
+    
+    
+            var circle_marker_24c5953296024a229f089180f68bf814 = L.circleMarker(
                 [52.575450000000046, 13.349700000000041],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#80ffb4",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#80ffb4",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_335602746cb34ecca7382afff7246dcf = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_670af16f219b4a61b6a7c8e5c46c62d7 = $(`<div id="html_670af16f219b4a61b6a7c8e5c46c62d7" style="width: 100.0%; height: 100.0%;">Reinickendorf - Cluster 2</div>`)[0];
-                popup_335602746cb34ecca7382afff7246dcf.setContent(html_670af16f219b4a61b6a7c8e5c46c62d7);
-            
-
-            circle_marker_6f7c2d2e3ea0494f933d7fc1f03a36e2.bindPopup(popup_335602746cb34ecca7382afff7246dcf)
-            ;
-
-            
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
         
     
-            var circle_marker_95a996e126274919ab667b1df8acdf7d = L.circleMarker(
+        var popup_4f37224b7bac4dfb81bc735b74f86961 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adac8e2bfed54ab8aab92f483ab7866f = $(`<div id="html_adac8e2bfed54ab8aab92f483ab7866f" style="width: 100.0%; height: 100.0%;">Reinickendorf - Cluster 1</div>`)[0];
+            popup_4f37224b7bac4dfb81bc735b74f86961.setContent(html_adac8e2bfed54ab8aab92f483ab7866f);
+        
+
+        circle_marker_24c5953296024a229f089180f68bf814.bindPopup(popup_4f37224b7bac4dfb81bc735b74f86961)
+        ;
+
+        
+    
+    
+            var circle_marker_510449cc3e874e9f8f358a55f6aaece2 = L.circleMarker(
                 [52.53487000000007, 13.202160000000049],
-                {
-  "bubblingMouseEvents": true,
-  "color": "#80ffb4",
-  "dashArray": null,
-  "dashOffset": null,
-  "fill": true,
-  "fillColor": "#80ffb4",
-  "fillOpacity": 0.7,
-  "fillRule": "evenodd",
-  "lineCap": "round",
-  "lineJoin": "round",
-  "opacity": 1.0,
-  "radius": 5,
-  "stroke": true,
-  "weight": 3
-}
-                )
-                .addTo(map_86cb56ca0c944d08b808d290127c99f0);
-            
-    
-            var popup_36be70e0951a4fcb9d337d1d68a45979 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_1ca3813d7ae4453eb9ea96ec010692a8 = $(`<div id="html_1ca3813d7ae4453eb9ea96ec010692a8" style="width: 100.0%; height: 100.0%;">Spandau - Cluster 2</div>`)[0];
-                popup_36be70e0951a4fcb9d337d1d68a45979.setContent(html_1ca3813d7ae4453eb9ea96ec010692a8);
-            
-
-            circle_marker_95a996e126274919ab667b1df8acdf7d.bindPopup(popup_36be70e0951a4fcb9d337d1d68a45979)
-            ;
-
-            
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
         
+    
+        var popup_670bd86512c5480f9f34a19fa74279c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca63dcee58054218911861e916d399cb = $(`<div id="html_ca63dcee58054218911861e916d399cb" style="width: 100.0%; height: 100.0%;">Spandau - Cluster 1</div>`)[0];
+            popup_670bd86512c5480f9f34a19fa74279c3.setContent(html_ca63dcee58054218911861e916d399cb);
+        
+
+        circle_marker_510449cc3e874e9f8f358a55f6aaece2.bindPopup(popup_670bd86512c5480f9f34a19fa74279c3)
+        ;
+
+        
+    
+    
+            var circle_marker_34e8fd2127e3422bb09d70210b42d51a = L.circleMarker(
+                [52.43333000000007, 13.600000000000023],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_3fdbd3c5843d4794ad46af96ad519f17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8090135cda27454abf1c660a3631e911 = $(`<div id="html_8090135cda27454abf1c660a3631e911" style="width: 100.0%; height: 100.0%;">Treptow-Köpenick - Cluster 1</div>`)[0];
+            popup_3fdbd3c5843d4794ad46af96ad519f17.setContent(html_8090135cda27454abf1c660a3631e911);
+        
+
+        circle_marker_34e8fd2127e3422bb09d70210b42d51a.bindPopup(popup_3fdbd3c5843d4794ad46af96ad519f17)
+        ;
+
+        
+    
+    
+            var circle_marker_7e5a67273f3d43a6b4dfff072c9e8dfd = L.circleMarker(
+                [52.52119000000005, 13.424140000000023],
+                {"bubblingMouseEvents": true, "color": "#80ffb4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80ffb4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_0d1278174f22443e8bfdf7a2231a6f71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c5e2507ed2c44c2ad6053c276b8b70f = $(`<div id="html_8c5e2507ed2c44c2ad6053c276b8b70f" style="width: 100.0%; height: 100.0%;">Mitte - Cluster 2</div>`)[0];
+            popup_0d1278174f22443e8bfdf7a2231a6f71.setContent(html_8c5e2507ed2c44c2ad6053c276b8b70f);
+        
+
+        circle_marker_7e5a67273f3d43a6b4dfff072c9e8dfd.bindPopup(popup_0d1278174f22443e8bfdf7a2231a6f71)
+        ;
+
+        
+    
+    
+            var circle_marker_a1a13b199380480ea8a736b1706fd63b = L.circleMarker(
+                [52.47769743739926, 13.35870062810808],
+                {"bubblingMouseEvents": true, "color": "#80ffb4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80ffb4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_e6426a2c92bc45c1802631f9367067b5);
+        
+    
+        var popup_2643ec4d9e694793a17706e55a3b9c2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f20bb05137e4ad8ac5489d566ba24ba = $(`<div id="html_5f20bb05137e4ad8ac5489d566ba24ba" style="width: 100.0%; height: 100.0%;">Tempelhof-Schöneberg - Cluster 2</div>`)[0];
+            popup_2643ec4d9e694793a17706e55a3b9c2c.setContent(html_5f20bb05137e4ad8ac5489d566ba24ba);
+        
+
+        circle_marker_a1a13b199380480ea8a736b1706fd63b.bindPopup(popup_2643ec4d9e694793a17706e55a3b9c2c)
+        ;
+
+        
+    
 </script>
